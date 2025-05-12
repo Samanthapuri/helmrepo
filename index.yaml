@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  webapp-python:
+  - apiVersion: v1
+    appVersion: 1.0.0
+    created: "2025-05-12T17:57:10.947974026Z"
+    description: A Helm chart for Kubernetes
+    digest: 4df7b1b4992db5285b02cefca8b3044cb4067e8dbe14d31ddf00bc9d5d37a173
+    name: webapp-python
+    type: application
+    urls:
+    - https://github.com/Samanthapuri/helmrepo/releases/download/webapp-python-1.0.0/webapp-python-1.0.0.tgz
+    version: 1.0.0
+generated: "2025-05-12T17:57:10.94798707Z"
