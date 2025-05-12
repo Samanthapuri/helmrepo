@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: {{ .Release.Name }}-service
   labels:
-    test: testval
+    test: testval1
     name: {{ .Values.service.labels.name}}
 spec:
 {{- with .Values.service }}
