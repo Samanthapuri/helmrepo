@@ -1,0 +1,30 @@
+
+
+replicaCount: 1
+
+image:
+  repository: platformdemos/webapp:v1 
+
+pod:
+  labels:
+    app: web-app
+    type: frontend
+
+serviceAccount:
+  enabled: true
+  name: demo-sa
+
+service:
+  protocol: TCP
+  type: ClusterIP 
+  port: 8000
+  targetPort: 8444
+  labels:
+    app: web-app
+    type: frontend    
+deployment:
+  port: 8444
+
+ingress:
+  hostPrefix:   #add your username here. Do not without spaces, underscores, special characters
+  # Use endpoint hostPrefix.saasdemos.controller.gorafay.net to access application web page.
