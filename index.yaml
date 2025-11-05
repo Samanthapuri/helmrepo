@@ -1,5 +1,29 @@
 apiVersion: v1
 entries:
+  haproxy:
+  - annotations:
+      artifacthub.io/changes: |
+        - Update base image to HAProxy 3.2.6
+    apiVersion: v2
+    appVersion: 3.2.6
+    created: "2025-11-05T21:13:23.905460591Z"
+    description: A Helm chart for HAProxy on Kubernetes
+    digest: f03797e932845741530d04ff4de1b2ac25242bd00f65f3794625c770632179ec
+    home: https://github.com/haproxytech/helm-charts/tree/main/haproxy
+    icon: https://raw.githubusercontent.com/haproxytech/helm-charts/main/haproxy/chart-icon.png
+    keywords:
+    - haproxy
+    kubeVersion: '>=1.17.0-0'
+    maintainers:
+    - email: dkorunic@haproxy.com
+      name: Dinko Korunic
+    name: haproxy
+    sources:
+    - http://www.haproxy.org/
+    type: application
+    urls:
+    - https://github.com/Samanthapuri/helmrepo/releases/download/haproxy-1.26.1/haproxy-1.26.1.tgz
+    version: 1.26.1
   webapp-python:
   - apiVersion: v1
     appVersion: 9.0.0
@@ -91,4 +115,4 @@ entries:
     urls:
     - https://github.com/Samanthapuri/helmrepo/releases/download/webapp-python-1.0.0/webapp-python-1.0.0.tgz
     version: 1.0.0
-generated: "2025-07-25T17:07:44.444513973Z"
+generated: "2025-11-05T21:13:23.905488724Z"
